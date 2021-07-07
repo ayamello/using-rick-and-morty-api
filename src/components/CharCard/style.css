@@ -1,0 +1,33 @@
+div.AliveCharacter, div.DeadCharacter {
+    width: 222px;
+    text-align: center;
+    margin: 2vh 1vw;
+    padding: 2vh 0;
+    font-family: 'Petrona';
+}
+
+div.AliveCharacter {
+    background-color: #F1F7FE;
+    border: 1px solid #DDDDDD;
+    box-shadow: 1px 4px 12px 0px rgba(111, 149, 79, 0.75);
+}
+
+div.DeadCharacter {
+    background-color: #F8CCCE;
+    border: 1px solid #774345;
+    box-shadow: 1px 4px 12px 0px rgba(149, 85, 79, 0.75);
+}
+
+p.NameCharacter {
+    font-weight: 800;
+    font-size: 1.2em;
+}
+
+span {
+    display: block;
+    margin-bottom: 2vh;
+}
+
+img {
+    width: 160px;
+}

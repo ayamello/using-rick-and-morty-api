@@ -1,0 +1,14 @@
+.App {
+    width: 70%;
+    margin: 0 auto;
+}
+
+footer p {
+    font-family: 'Petrona';
+    text-align: center;
+    font-size: 0.7em;
+    color: #c4c4c4;
+    margin: 5vh 0 3vh 0;
+    padding-top: 2vh;
+    border-top: 1px solid #c4c4c498;
+}
