@@ -3,6 +3,22 @@
     margin: 0 auto;
 }
 
+div.BtnPages {
+    text-align: center;
+    margin-top: 3vh;
+}
+    div.BtnPages button {
+        margin: 0 2vw;
+        width: 20vw;
+        height: 5vh;
+        border: 1px solid greenyellow;
+        border-radius: 5px;
+        font-family: 'Petrona';
+        font-weight: 800;
+        color: greenyellow;
+        background-color: rgba(0, 0, 0, 0.342);
+    }
+
 footer p {
     font-family: 'Petrona';
     text-align: center;
