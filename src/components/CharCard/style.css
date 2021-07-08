@@ -31,3 +31,9 @@ span {
 img {
     width: 160px;
 }
+
+@media (min-width: 500px) {
+    div.AliveCharacter, div.DeadCharacter {
+        width: 200px;
+    }
+}

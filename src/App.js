@@ -5,27 +5,32 @@ import './App.css';
 function App() {
     const [characterList, setCharacterList] = useState([]);
     const [page, setPage] = useState(1);
-
+    const [maxPages, setMaxPages] = useState();
 
     useEffect(() => {
         fetch(`https://rickandmortyapi.com/api/character?page=${page}`)
         .then(response => response.json())
-        .then(response => setCharacterList(response.results))
+        .then(response => {
+            setCharacterList(response.results);
+            setMaxPages(response.info.pages);
+        })
         .catch(err => console.log(err));
     }, [page]);
 
-    console.log(characterList);
-
     function nextPage() {
-        setPage(page + 1);
+        if(page < maxPages) {
+            setPage(page + 1);
+            window.scrollTo({ top: 120, behavior: 'smooth' })
+        }
     }
 
     function previousPage() {
         if(page > 1) {
             setPage(page - 1);
+            window.scrollTo({ top: 120, behavior: 'smooth' })
         }
     }
-
+ 
     return(
         <div className="App">
             <Characters characterList={characterList} />
